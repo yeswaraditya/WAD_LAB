@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+   
+</head>
+
+<body>
+    <div class="header">
+        <h1>Basic Application Form</h1>
+    </div>
+    
+    <!-- Form Container -->
+    <div class="container"> 
+        <form>
+            <div class="bo">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Eswar">
+            </div>
+            
+            <div class="bo">
+                <label for="second-name">Second Name:</label>
+                <input type="text" id="second-name" name="second-name" placeholder="Aditya">
+            </div>
+            
+            <div class="bo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="eswar.aditya@example.com">
+            </div>
+            
+            <div class="bo">
+                <label>Select Gender:</label>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            
+            <div class="bo">
+                <label for="skill">Select a Skill:</label>
+                <select name="skill" id="skill">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="Bootstrap">Bootstrap</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+            
+            <div class="bo">
+                <label>Select your Technologies:</label>
+                <div>
+                    <input type="checkbox" id="react" name="technologies" value="React">
+                    <label for="react">React JS</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="ai" name="technologies" value="AI">
+                    <label for="ai">Artificial Intelligence</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cloud" name="technologies" value="cloud">
+                    <label for="cloud">Cloud Computing</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="deep" name="technologies" value="deep">
+                    <label for="deep">Deep Learning</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="bchain" name="technologies" value="bchain">
+                    <label for="bchain">Block Chain</label>
+                </div>
+            </div>
+        
+            <div class="bo">
+                <label for="feedback">Details</label>
+                <textarea id="feedback" name="feedback" rows="5"></textarea>
+            </div>
+
+            <div class="bo">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+    body {
+        background-color: lightcyan;
+    }
+    
+    .header {
+        color: white;
+        border: 2px solid darkblue;
+        background-color: teal;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .container {
+        text-align: center;
+        line-height: 1.6;
+        border: 2px solid darkcyan;
+        background-color: lightyellow;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 10px;
+    }
+    
+    .bo {
+        color: crimson;
+        margin-bottom: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    
+    input[type="radio"],
+    input[type="checkbox"] {
+        margin-right: 5px;
+    }
+    
+    input[type="submit"],
+    input[type="reset"] {
+        padding: 10px 20px;
+        margin: 10px 5px;
+        border: none;
+        border-radius: 5px;
+        background-color: darkcyan;
+        color: white;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover,
+    input[type="reset"]:hover {
+        background-color: darkblue;
+    }
+    
+</style>
